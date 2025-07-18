@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 from werkzeug.exceptions import BadRequest
 
 app = Flask(__name__)
-CORS(app, origins=["mind-bridge-1z02yuoq1-nischays-projects-01d68259.vercel.app"])
+CORS(app, origins=["https://mind-bridge-1z02yuoq1-nischays-projects-01d68259.vercel.app"])
 @app.route("/")
 def home():
     return "Welcome to MindBridge API!"
