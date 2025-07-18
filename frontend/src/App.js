@@ -25,7 +25,7 @@ import {
 } from 'lucide-react';
 
 // API base URL - adjust for your backend
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://mindbridge-8e5u.onrender.com/';
 
 function App() {
   const [dassQuestions] = useState([
