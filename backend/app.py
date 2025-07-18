@@ -17,7 +17,11 @@ app = Flask(__name__)
 CORS(app, origins=["https://mind-bridge-1z02yuoq1-nischays-projects-01d68259.vercel.app"])
 @app.route('/auth/register', methods=['POST', 'OPTIONS'])
 def register():
-    # Your registration logic
+    if request.method == 'OPTIONS':
+        # Handle CORS preflight
+        return '', 204
+    
+    # Your POST logic here
     return jsonify({'message': 'User registered'})
 
 
